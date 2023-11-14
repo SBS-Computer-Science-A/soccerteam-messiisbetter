@@ -25,7 +25,7 @@ public class SoccerTeam {
     }
 
     public void played (SoccerTeam other, int myScore, int otherScore){
-        if (myScore > otherScore){
+        if (myScore > otherScore){//Listing possibilities
            this.wins++;
            other.losses++;
         } else if (myScore < otherScore){
