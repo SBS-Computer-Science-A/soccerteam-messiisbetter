@@ -32,10 +32,13 @@ public class SoccerTeam {
 (each win is three points, each tie is one point)
 Write a reset method that zeroes out this team's wins, losses, and ties.
 */
-    public int points (){
-       points()=
-
+    public int points(int points){
+       points += wins * 3;
+       points += ties;
+       return points;
     }
+
+    public  
 
 
 
