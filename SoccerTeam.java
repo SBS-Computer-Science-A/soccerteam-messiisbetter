@@ -39,11 +39,8 @@ public class SoccerTeam {
         totNumGoals += otherScore;
     }
 
-    private static int points;
-    public static int points(){
-       points += wins * 3;
-       points += ties;
-       return points;
+    public int points(){
+       return wins * 3 + ties;
     }
 
     public void reset (){

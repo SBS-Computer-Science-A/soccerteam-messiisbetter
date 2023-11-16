@@ -4,6 +4,7 @@ as well as the total number of games played and the total number of goals scored
 by all teams in the tournament. The program should then repeat this for another tournament
 
  */
+
 public class PlayTournament {
 public static void main(String[] gift){
     SoccerTeam Team1 = new SoccerTeam();
@@ -19,7 +20,11 @@ public static void main(String[] gift){
     Team3.played(Team4, 1,4);
 
     System.out.println(Team1.points());
-    
+    System.out.println(Team2.points());
+    System.out.println(Team3.points());
+    System.out.println(Team4.points());
+
 }
 
 }
+
