@@ -6,7 +6,7 @@ by all teams in the tournament. The program should then repeat this for another 
  */
 
 /*public class PlayTournament {
-public static void main(String[] gift){
+public static void main(String[] args){
     SoccerTeam Team1 = new SoccerTeam();
     SoccerTeam Team2 = new SoccerTeam();
     SoccerTeam Team3 = new SoccerTeam();
