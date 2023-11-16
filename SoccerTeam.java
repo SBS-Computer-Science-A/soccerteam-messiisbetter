@@ -14,9 +14,9 @@ by all teams in the tournament. The program should then repeat this for another 
 */
 
 public class SoccerTeam {
-    private static int wins;
-    private static int losses;
-    private static int ties;
+    private  int wins;
+    private  int losses;
+    private  int ties;
 
     public SoccerTeam(){//All starts with 0.
         wins = 0;
@@ -35,12 +35,14 @@ public class SoccerTeam {
             this.ties++;
             other.ties++;
         }
-        totNumGoals += myScore;
-        totNumGoals += otherScore;
+        this.totNumGoals += myScore;
+        other.totNumGoals += otherScore;
+        totalGamesPlayed++;
+        totalGoalsScored += myScore + otherScore;
     }
 
     public int points(){
-       return wins * 3 + ties;
+       return this.wins * 3 + this.ties;
     }
 
     public void reset (){
@@ -67,6 +69,16 @@ Tournament method to zero them out.
     totNumGoals = 0;
     }
 
+    private static int totalGamesPlayed;
+    private static int totalGoalsScored;
+
+    public static int getTotalGamesPlayed() {
+        return totalGamesPlayed;
+    }
+
+    public static int getTotalGoalsScored() {
+        return totalGoalsScored;
+    }
 
 /*
 

@@ -24,6 +24,7 @@ public static void main(String[] gift){
     System.out.println(Team3.points());
     System.out.println(Team4.points());
 
+
 }
 
 }
