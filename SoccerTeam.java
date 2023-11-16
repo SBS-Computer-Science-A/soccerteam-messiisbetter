@@ -25,13 +25,21 @@ public class SoccerTeam {
         totNumGoals = 0;
     }
 
+    private int totalPoints;
+    private int totalGoals;
+
+
+
+    public int goals() {
+        return totalGoals;
+    }
     public void played (SoccerTeam other, int myScore, int otherScore){
         if (myScore > otherScore){//Listing possibilities.
-           this.wins++;
-           other.losses++;
+            this.wins++;
+            other.losses++;
         } else if (myScore < otherScore){
-        this.losses++;
-        other.wins++;
+            this.losses++;
+            other.wins++;
         } else{
             this.ties++;
             other.ties++;
@@ -40,8 +48,10 @@ public class SoccerTeam {
         other.totNumGoals += otherScore;
         this.totalGamesPlayed++;
         this.totalGoalsScored += myScore + otherScore;
-        
+
     }
+
+
 
     public int points(){
        return this.wins * 3 + this.ties;
