@@ -9,14 +9,14 @@ public class SoccerTeam {
     private int losses;
     private int ties;
 
-    public SoccerTeam(){
+    public SoccerTeam(){//All starts with 0.
         wins = 0;
         losses = 0;
         ties = 0;
     }
 
     public void played (SoccerTeam other, int myScore, int otherScore){
-        if (myScore > otherScore){//Listing possibilities
+        if (myScore > otherScore){//Listing possibilities.
            this.wins++;
            other.losses++;
         } else if (myScore < otherScore){
