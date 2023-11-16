@@ -24,15 +24,21 @@ public static void main(String[] gift){
     System.out.println(Team3.points());
     System.out.println(Team4.points());
 
-    System.out.println(Team1.getTotalGamesPlayed());
+   /* System.out.println(Team1.getTotalGamesPlayed());
     System.out.println(Team2.getTotalGamesPlayed());
     System.out.println(Team3.getTotalGamesPlayed());
     System.out.println(Team4.getTotalGamesPlayed());
 
+    */
+    System.out.println("Total Games Played by Team 1: " + Team1.getTotalGamesPlayed());
+    System.out.println("Total Games Played by Team 2: " + Team2.getTotalGamesPlayed());
+    System.out.println("Total Games Played by Team 3: " + Team3.getTotalGamesPlayed());
+    System.out.println("Total Games Played by Team 4: " + Team4.getTotalGamesPlayed());
+}
 
 
 
 }
 
-}
+
 
