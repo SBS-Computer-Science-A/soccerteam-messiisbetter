@@ -1,7 +1,16 @@
 /*
-(b) Write a method that returns this team's current number of points
-(each win is three points, each tie is one point)
-Write a reset method that zeroes out this team's wins, losses, and ties.
+(c) Add fields to keep track of the total number of games played and
+the total number of goals scored by all teams in a tournament, combined.
+Modify the played method from Part (a) to update these fields.
+Add static accessor methods for these two fields and a static start
+Tournament method to zero them out.
+
+
+(d) Write a program called PlayTournament.java that defines four teams,
+makes them "play" a few games with each other, and then reports each team's points
+as well as the total number of games played and the total number of goals scored
+by all teams in the tournament. The program should then repeat this for another tournament
+
 */
 
 public class SoccerTeam {
@@ -26,21 +35,36 @@ public class SoccerTeam {
             this.ties++;
             other.ties++;
         }
+        totNumGoals += myScore;
+        totNumGoals += otherScore;
     }
-    /*
-(b) Write a method that returns this team's current number of points
-(each win is three points, each tie is one point)
-Write a reset method that zeroes out this team's wins, losses, and ties.
-*/
+
     public int points(int points){
        points += wins * 3;
        points += ties;
        return points;
     }
 
-    public  
+    public void reset (){
+        wins = losses = ties = 0;
+    }
 
+    /*
+    (c) Add fields to keep track of the total number of games played and
+the total number of goals scored by all teams in a tournament, combined.
+Modify the played method from Part (a) to update these fields.
 
+Add static accessor methods for these two fields and a static start
+Tournament method to zero them out.
+     */
+    private int gamePlayed;
+    private int totNumGoals;
+/*
+Add static accessor methods for these two fields and a static start
+Tournament method to zero them out.
+
+ */
+    public static int 
 
 
 
