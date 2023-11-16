@@ -14,9 +14,9 @@ by all teams in the tournament. The program should then repeat this for another 
 */
 
 public class SoccerTeam {
-    private int wins;
-    private int losses;
-    private int ties;
+    private static int wins;
+    private static int losses;
+    private static int ties;
 
     public SoccerTeam(){//All starts with 0.
         wins = 0;
@@ -39,7 +39,8 @@ public class SoccerTeam {
         totNumGoals += otherScore;
     }
 
-    public int points(int points){
+    private static int points;
+    public static int points(){
        points += wins * 3;
        points += ties;
        return points;
