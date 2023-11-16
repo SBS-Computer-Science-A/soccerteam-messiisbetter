@@ -35,6 +35,8 @@ public class SoccerTeam {
             this.ties++;
             other.ties++;
         }
+        totNumGoals += myScore;
+        totNumGoals += otherScore;
     }
 
     public int points(int points){
@@ -51,11 +53,18 @@ public class SoccerTeam {
     (c) Add fields to keep track of the total number of games played and
 the total number of goals scored by all teams in a tournament, combined.
 Modify the played method from Part (a) to update these fields.
+
 Add static accessor methods for these two fields and a static start
 Tournament method to zero them out.
      */
     private int gamePlayed;
-    private int numGoals;
+    private int totNumGoals;
+/*
+Add static accessor methods for these two fields and a static start
+Tournament method to zero them out.
+
+ */
+    public static int 
 
 
 
