@@ -38,8 +38,9 @@ public class SoccerTeam {
         }
         this.totNumGoals += myScore;
         other.totNumGoals += otherScore;
-        totalGamesPlayed++;
-        totalGoalsScored += myScore + otherScore;
+        this.totalGamesPlayed++;
+        this.totalGoalsScored += myScore + otherScore;
+        
     }
 
     public int points(){
