@@ -22,6 +22,7 @@ public class SoccerTeam {
         wins = 0;
         losses = 0;
         ties = 0;
+        totNumGoals = 0;
     }
 
     public void played (SoccerTeam other, int myScore, int otherScore){
